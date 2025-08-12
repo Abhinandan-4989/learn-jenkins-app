@@ -5,20 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 cleanWs()
-                bat'''if not exist build mkdir build
-                echo "First Line" > build/myfile.txt
-                echo "Second Line" >> build/myfile.txt
+                bat'''
+                    node --version
+                    npm --version
+                    npm run build
                 '''
             }
         }
-        stage('Test'){
-            steps{
-                
-                bat'''if not exist build mkdir test
-                echo "First Line" > test/myfile.txt
-                echo "Second Line" >> test/myfile.txt
-                '''
-            }
-        }
+
     }
 }
