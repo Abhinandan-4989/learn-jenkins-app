@@ -8,9 +8,9 @@ pipeline {
             
                 bat 'node --version'
                 bat 'npm --version'
+                bat 'pwd'
                 bat 'echo Hello World'
-                bat 'npm run build'
-                bat 'echo Hello World'                
+                bat 'npm run build'               
             }
         }
 
