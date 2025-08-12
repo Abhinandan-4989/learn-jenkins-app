@@ -9,7 +9,7 @@ pipeline {
                     node --version
                     npm --version
                     npm run build
-                    echo "Hello World"
+                    echo Hello World
                 '''
             }
         }
