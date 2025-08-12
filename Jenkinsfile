@@ -8,6 +8,7 @@ pipeline {
                 bat'''
                     node --version
                     npm --version
+                    echo Hello World
                     npm run build
                     echo Hello World
                 '''
