@@ -10,7 +10,8 @@ pipeline {
                 echo "Second Line" >> build/myfile.txt
                 '''
             }
-
+        }
+        stage('Test'){
             steps{
                 cleanWs()
                 bat'''if not exist build mkdir test
