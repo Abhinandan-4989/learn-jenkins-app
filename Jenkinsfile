@@ -5,13 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 // cleanWs()
-                bat'''
-                    node --version
-                    npm --version
-                    echo Hello World
-                    npm run build
-                    echo Hello World
-                '''
+            
+                bat node --version
+                bat npm --version
+                bat echo Hello World
+                bat npm run build
+                bat echo Hello World
+                
             }
         }
 
