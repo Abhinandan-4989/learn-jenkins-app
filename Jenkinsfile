@@ -8,8 +8,7 @@ pipeline {
             
                 bat 'node --version'
                 bat 'npm --version'
-                bat 'cd'
-                bat 'echo Hello World'
+                bat 'npm ci'
                 bat 'npm run build'               
             }
         }
