@@ -22,7 +22,7 @@ pipeline {
                 ) else (
                     echo "Index file not available"
                 )
-                npm test
+                npm test .\\src\\App.test.js
                 '''
             }
         }
