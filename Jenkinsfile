@@ -22,6 +22,7 @@ pipeline {
                 ) else (
                     echo "Index file not available"
                 )
+                npm test
                 '''
             }
         }
