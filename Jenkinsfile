@@ -22,7 +22,7 @@ pipeline {
                 ) else (
                     echo "Index file not available"
                 )
-                npm test -- --watchAll=false .src/App.test.js
+                npm test -- --watchAll=false ./src/App.test.js
 
                 '''
             }
