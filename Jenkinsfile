@@ -15,7 +15,14 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'echo "Test Stage"'
+                bat '''
+                echo "Test Stage"
+                if exist .\build\index.html (
+                    echo "Index file available"
+                ) else (
+                    echo "Index file not available"
+                )
+                '''
             }
         }
 
